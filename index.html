@@ -12,7 +12,7 @@
         <aside>
         
             <div>
-                <img src="img/photo_profile.jpg" alt="photo">
+                <img class="img__photo" src="img/photo_profile.jpg" alt="photo">
             </div>
             <section class="contact">
                 <h3>Contacts</h3>
@@ -25,13 +25,13 @@
             <section class="skills">
                 <h3> Skills </h3>
                 <div class="line__blue"></div>
-                <ul>
-                    <li> GitHub </li>
-                    <li> HTML </li>
-                    <li> CSS </li>
-                    <li> SASS </li>
-                    <li> JavaScript (in process...) </li>
-                    <li> Figma </li>
+                <ul class="ul_skills">
+                    <li class="skills__git"> GitHub </li>
+                    <li class="skills__html"> HTML </li>
+                    <li class="skills__css"> CSS </li>
+                    <li class="skills__sass"> SASS </li>
+                    <li class="skills__js"> JavaScript (in process...) </li>
+                    <li class="skills__figma"> Figma </li>
          
                 </ul>
             </section>
@@ -41,11 +41,11 @@
                 <div class="education__place">
                     "Kherson National Technical
                     University"
-                    <p>Specialist degree in Engineer fabric desig</p>
+                    <p class="education__descr">Specialist degree in Engineer fabric desig</p>
                 </div>
                 <div class="education__place">
-                    "QATestLab "
-                    <p>Software testing</p>
+                    <a href="https://qatestlab.com/" target="_blank">"QATestLab"</a> 
+                    <p class="education__descr">Software testing</p>
                 </div>
 
             </section>
@@ -60,28 +60,34 @@
 
             <div class="main__wrapper">
                 <section class="about">
-                   <div class="line__black"></div>
+                   
                     <h3> ABOUT MYSELF </h3>
+                    <div class="line__black"></div>
                     <p> Hello there! I'm a person who believes in constant self-development. 
                     I love working with people, communication and creation of something new. 
                     I am open to learning new tools and processes.</p>
 
-                    <h3> Qualities </h3>
-                    <ul>
-                        <li>Team playing</li>
-                        <li>Collaboration</li>
-                        <li>Problem solving</li>
-                        <li>Customer focus</li>
+                    <h3> My strengths: </h3>
+                    <ul class="li_main">
+                        <li class="li_main">Team playing</li>
+                        <li class="li_main">Collaboration</li>
+                        <li class="li_main">Problem solving</li>
+                        <li class="li_main">Customer focus</li>
                     </ul>
                     
                     <h3> Languages </h3>
-                 <ul>
-                    <li>Russian - native</li>
-                    <li>Ukrainian- native</li>
-                    <li>Polish-fluent</li>
-                    <li>English - A2 (B1 in process...)</li>
+                 <ul class="li_main">
+                    <li class="li_main">Russian - native</li>
+                    <li class="li_main">Ukrainian- native</li>
+                    <li class="li_main">Polish-fluent</li>
+                    <li class="li_main">English - A2 (B1 in process...)</li>
                 </ul>   
                 </section>
+
+                <div class="wrapp_keep_learning">
+                    <a class="keep_learning" href="https://roadmap.sh/frontend"  target="_blank">Keep_learning...</a>
+                </div>
+
                 <section class="code__example">
                     <h3> Code examples </h3>
                     <div class="line__black"></div>
@@ -89,7 +95,7 @@
                         <code>
                             function nthFibo(n) {
                               let arrFib = [0, 1, 1];
-                              for (i = 1; i < n; i++){
+                              for (i = 1; i &lt; n; i++){
                                 arrFib.push(arrFib[i] + arrFib[i + 1]);
                               }
                               console.log(arrFib[n - 1]);
@@ -101,14 +107,16 @@
             </div>
 
             <footer>
-                <div>
-                    <a href="https://github.com/Olga-plus"><img class="link" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo GitHub" width="100px"></a>
+                <div class="wrapper_footer_div">
+                    <a href="https://github.com/Olga-plus" target="_blank"><img class="link" src="/img/logo-git.png" alt="logo GitHub"></a>
                 </div>
-                <div>
-                    <a href="https://rs.school/js/"><img class="link" src="https://rs.school/images/partners/logo-rs.svg" alt="logo rs school" width="100px"></a>
-                </div>
-                <div>
+
+                <div class="wrapper_footer_div">
                     © 2021
+                </div>
+
+                <div class="wrapper_footer_div">
+                    <a href="https://rs.school/js/" target="_blank"><img class="link" src="https://rs.school/images/partners/logo-rs.svg" alt="logo rs school"></a>
                 </div>
             </footer> 
         </main>
