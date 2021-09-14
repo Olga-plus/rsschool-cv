@@ -94,25 +94,25 @@ li {
 }
 
 .skills__git {
-    background-image: url(/img/git.png);   
+    background-image: url(../img/git.png);   
 }  
 .skills__html {
-    background-image: url(/img/html5.png);   
+    background-image: url(../img/html5.png);   
 }
 .skills__css {
-    background-image: url(/img/css.png); 
+    background-image: url(../img/css.png); 
 }
 
 .skills__sass {
-    background-image: url(/img/sass.png); 
+    background-image: url(../img/sass.png); 
 }
 
 .skills__js {
-    background-image: url(/img/js.png); 
+    background-image: url(../img/js.png); 
 }
 
 .skills__figma {
-    background-image: url(/img/figma.png); 
+    background-image: url(../img/figma.png); 
 }
 
 a {
@@ -179,7 +179,7 @@ header {
 .wrapp_keep_learning::after {
     content: '';
     display: block;
-    width: 5px;
+    width: 15px;
     height: 32px;
     position: absolute;
     right: -60px;
