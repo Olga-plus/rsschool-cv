@@ -33,7 +33,7 @@ body {
     margin: 10px auto;
 }
 
-h3 {
+h3, h4, h5 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase; 
@@ -179,19 +179,6 @@ main {
     padding: 0px 60px;
 }
 
-.btn {
-    position: relative;
-    left: 200px;
-    bottom: 100px;
-    display: inline-block; 
-    background: #212529; 
-    color: #fff; 
-    padding: 0,5em; 
-    text-decoration: none; 
-    border-radius: 3px; 
-}
-
-
 .keep_learning {
     color: #1d0303;
 }
@@ -236,11 +223,6 @@ pre {
     white-space: pre;
 }
 
-.js-code {
-    display: block;
-    overflow-x: auto;
-    padding: 1.5em;
-}
 
 footer {
     display: flex;
@@ -265,10 +247,18 @@ footer {
 }
 
 @media (max-width: 1200px) {
+
     .container{
         max-width: 970px;
-        margin: 10px;
         font-size: 14px;
+    }
+
+    .wrapper-colum {
+        max-width: 100%;
+        display: flex;
+            overflow: hidden;
+        flex-direction: row;
+        margin: 50px;
     }
 }
 
@@ -276,14 +266,19 @@ footer {
     .container{
         max-width: 750px;
     }
-
+    .wrapper-colum {
+        max-width: 50%;
+        display: flex;
+            overflow: hidden;
+        flex-direction: column;
+    }
 
 
 }
 
 @media (max-width: 620px) {
     .container{
-        max-width: 420px;
+        max-width: 400px;
     }
 
     .wrapper-colum {
