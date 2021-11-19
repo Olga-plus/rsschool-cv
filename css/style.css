@@ -22,6 +22,7 @@ body {
 }
 
 .wrapper-colum {
+    width: 100%;
     max-width: 1100px;
     display: flex;
         overflow: hidden;
@@ -29,14 +30,19 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 h3, h4, h5 {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase; 
+}
+
+p {
+margin:0;
 }
 
 .line__black {
@@ -51,6 +57,14 @@ h3, h4, h5 {
     height: 3px;
     background-color: #ffebcd;
     margin-bottom: 1em;
+}
+
+.block-name {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
 
 aside {
@@ -71,30 +85,31 @@ aside {
 
 .img__photo {
     border-radius: 50%;
-    margin-bottom: 50px;
+    margin: 3vh 0  3vh 0;
 }
 
 section {
-    margin-top: 30px;
+    margin-top: 1vh;
+    padding: 0 3vh 0 3vh;
 }
 
 .education{
     display: flex;
     flex-direction: column;
     /* padding-left: 30px; */
-    padding-right: 30px;
+
     
 }
 
 .education__place {
     /* width: 70%; */
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .education__descr {
-    padding-left: 20px;
-    font-size: 16px;
+    padding-left: 3vh;
+    font-size: 0.9rem;
     font-weight: 300;
 }
 
@@ -162,21 +177,18 @@ main {
 
 .my_name_block {
     width: 100%;
-    height: 200px;
     background-color: #212529;;
-    padding: 65px 50px;
     text-transform: uppercase;
-    margin-bottom: 50px;
     color: #ffebcd;
 }
 
 .name {
-    font-size: 47px;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 .main__wrapper {
-    padding: 0px 60px;
+    padding: 0px 1vw;
 }
 
 .keep_learning {
@@ -258,12 +270,17 @@ footer {
         display: flex;
             overflow: hidden;
         flex-direction: row;
-        margin: 50px;
+    }
+
+    .name {
+        font-size: 4rem;
+        font-weight: 600;
     }
 }
 
 @media (max-width: 992px) {
     .container{
+        margin-top: 2vh;
         max-width: 750px;
     }
     .wrapper-colum {
@@ -273,12 +290,21 @@ footer {
         flex-direction: column;
     }
 
+    .block-name {
+        flex-direction: column;
+    }
+    .name {
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
 }
 
 @media (max-width: 620px) {
     .container{
-        max-width: 400px;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 2vh;
     }
 
     .wrapper-colum {
@@ -292,6 +318,11 @@ footer {
 @media (max-width: 320px) {
     .container{
         max-width: none ;
+    }
+
+    .name {
+        font-size: 30px;
+        font-weight: 600;
     }
 
     .wrapper-colum {
